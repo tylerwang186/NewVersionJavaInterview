@@ -118,8 +118,7 @@ final public class Graph<T> {
      * This method is to check to see if the passed in node was already evaluated A node defined
      * as already evaluated means that its incoming nodes were already evaluated
      * as well
-     * @param node
-     *            The Node to be checked
+     * @param node the Node to be checked
      * @return The return value represents the node evaluation status
      */
     private boolean isAlreadyEvaluated(GraphNode<T> node) {
@@ -130,8 +129,7 @@ final public class Graph<T> {
      * This method is to check to see if all the passed nodes were already evaluated. This could
      * be thought as an and logic between every node evaluation status
      * @param nodes the nodes to be checked
-     * @return The return value represents the evaluation status for all the
-     *         nodes
+     * @return the return value represents the evaluation status for all the nodes
      */
     private boolean areAlreadyEvaluated(List<GraphNode<T>> nodes) {
         return evaluatedNodes.containsAll(nodes);
